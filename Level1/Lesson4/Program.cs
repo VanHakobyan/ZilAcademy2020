@@ -16,9 +16,7 @@ namespace Lesson4
             n1 += 0.000000567m;
             f += 0.000000567m;
 
-            bool result = false;
-
-            result = n1 == f;
+            var result = n1 == f;
             Console.WriteLine(result);
 
             Console.ReadKey();
