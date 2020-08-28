@@ -6,7 +6,10 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
-            byte b = 255;
+            string text = Console.ReadLine();
+
+            byte b1 = byte.Parse(text);
+            byte b = Convert.ToByte(text);
 
             bool res = (byte)(b + 1) < b;
             Console.WriteLine(res);
