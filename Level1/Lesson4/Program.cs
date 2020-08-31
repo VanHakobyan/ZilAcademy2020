@@ -13,8 +13,7 @@ namespace Lesson4
             decimal n1 = 0.000000006m;
             decimal f = 0.000000006m;
 
-            n1 += 0.000000567m;
-            f += 0.000000567m;
+            bool b = n1 != f;
 
             var result = n1 == f;
             Console.WriteLine(result);
