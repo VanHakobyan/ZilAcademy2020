@@ -11,18 +11,35 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            int[] array = new int[100];
 
-            for (int i = 0; i < 100; i++)
+            byte[] array = new byte[4];
+            for (int i = 0; i < array.Length; i++)
             {
-                array[i] = i + 1;
+                array[i] = (byte)(i * i);
             }
 
-            for (int i = 0; i < 100; i++)
+            byte[,] matrix = new byte[4, 5];
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                Console.WriteLine($"Index[{i}], value={array[i]}");
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = (byte)(i * j);
+                }
             }
 
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write($"{matrix[i, j]} ");
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.ReadKey();
         }
     }
 }
