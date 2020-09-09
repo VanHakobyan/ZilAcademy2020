@@ -8,6 +8,24 @@ namespace Lesson7._2
 {
     class Program
     {
+        static bool Task14(int n)
+        {
+            int sum = 0;
+            int res = n;
+            while (n != 0)
+            {
+                sum += n % 10;
+                n /= 10;
+            }
+            if (sum * 2 == res)                                   //chi ashxatum
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         //func
         static int Sum(int one, int two)
         {
@@ -45,13 +63,20 @@ namespace Lesson7._2
             return matrix;
         }
 
+
+
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Enter a number");
+            int n = int.Parse(Console.ReadLine());
+            bool isDoubleSum = Task14(n);
+
             byte[,] mat = new byte[20, 12];
-            
+
             mat = InitMatrix(mat);
             PrintMatrix(mat);
-            
+
             mat[1, 7] = 0;
             PrintMatrix(mat);
 
