@@ -10,14 +10,15 @@ namespace Lesson10._2
     {
         static void Main(string[] args)
         {
-            int x = new int();
-            Console.WriteLine(x);
+            int[] array = new int[5];
+            Console.WriteLine();
 
             Soldier soldier1 = new Soldier(180f, 70f, 50);
             Soldier soldier2 = new Soldier(180f, 70f, 50);
 
             var height = soldier1.GetHeight();
             Console.WriteLine(height);
+
         }
     }
 }
