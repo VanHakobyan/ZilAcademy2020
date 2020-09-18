@@ -4,26 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson11
+namespace Lesson12
 {
-    public class Human
+    public class Memory
     {
         private string _name;
+        private int _age;
 
-        public Human()
-        {
-
-        }
-
-        public Human(string name)
+        public Memory(string name)
         {
             _name = name;
         }
 
-
-        public virtual void SayHello()
+        public Memory(string name, int age) : this(name)
         {
-            Console.WriteLine("Hello. (Human) !!!");
+            _age = age;
         }
     }
 }

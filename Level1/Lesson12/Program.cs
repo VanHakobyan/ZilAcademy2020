@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson11
+namespace Lesson12
 {
-    public class Table
+    class Program
     {
-        public static string K;
-        static Table()
+        static void Main(string[] args)
         {
-
+            Memory memory = new Memory("Karen", 50);
         }
     }
 }

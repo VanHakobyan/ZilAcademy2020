@@ -10,6 +10,9 @@ namespace Lesson11
     {
         static void Main(string[] args)
         {
+            var s = Table.K;
+
+
             Student student = new Student("Karen");
             student.SayHello();
 
